@@ -58,14 +58,6 @@ const Header: React.FC = () => {
             </li>
             <li>
               <Link
-                to="/ProductCard"
-                className="block px-2 py-1 text-sm font-semibold text-gray-300 hover:text-white"
-              >
-                 Products
-              </Link>
-            </li>
-            <li>
-              <Link
                 to="/About"
                 className="block px-2 py-1 text-sm font-semibold text-gray-300 hover:text-white"
               >
@@ -73,6 +65,15 @@ const Header: React.FC = () => {
                 About Us
               </Link>
             </li>
+            <li>
+              <Link
+                to="/ProductCard"
+                className="block px-2 py-1 text-sm font-semibold text-gray-300 hover:text-white"
+              >
+                 Products
+              </Link>
+            </li>
+           
             <li>
               <Link
                 to="/Gallery"

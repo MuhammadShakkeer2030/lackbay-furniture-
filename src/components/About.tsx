@@ -23,6 +23,7 @@ const About: React.FC = () => {
             <p className="text-gray-600">
               Customer satisfaction is our major concern, and we always care about the value of their spending by making sure that the product meets international quality at every phase of its manufacturing procedures and delivery stages.
             </p>
+            <img src="/images/business1.jpg" alt="" />
           </div>
         </div>
 
@@ -34,6 +35,7 @@ const About: React.FC = () => {
           <p className="text-gray-600">
             Lacbay furniture signs up to make signature designs for the category of the sofa. It has a wide range of collections available in the catalogue of different aesthetics like classic, modern, contemporary, industrial, etc. Our team of highly skilled, diligent, and trained hands actualizes aesthetic space concepts for those who long for a global standard of living without compromising on the creation. And our furniture designs are exclusively unique to keep the prestige of our customers.
           </p>
+          <img src="/images/busi4.jpg" alt="" />
         </div>
 
         <div className="mt-10 md:mt-16 lg:mt-20">
@@ -44,6 +46,8 @@ const About: React.FC = () => {
           <p className="text-gray-600">
             Our biggest advertisement is our product quality. When customers like a product, they are more than happy to convince others to like it too. Therefore, our well-organized management method in manufacturing, marketing, administration, and all activities and procedures of management ensures quality. For each stage of production like wood purchasing, wood swaying, carpentry work, etching, polishing, spray painting, and upholstery, we conduct strict quality checks before moving from one section to another. This is why we can provide the utmost perfection and a lifelong guarantee for our outputs.
           </p>
+          <img src="/images/sofa.jpg" alt="sofa.jpg" />
+          <img src="/images/wood4.jpg" alt="wood4.jpg" className='mt-5'/>
         </div>
       </div>
     </div>
