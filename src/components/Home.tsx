@@ -57,19 +57,19 @@ const Home: React.FC = () => {
            
             
             <h3 className="text-xl font-bold mb-2">Single Seat</h3>
-            <img src="/images/single-seat.jpg" alt="Single Seat" className="w-full mb-2" />
+            {/* <img src="/images/single-seat.jpg" alt="Single Seat" className="w-full mb-2" /> */}
             <p className="text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
           <div className="bg-gray-200 rounded-lg p-4">
           <img src="/images/corner.png" alt="catogory-img-1" />
             <h3 className="text-xl font-bold mb-2">Corner Sofa</h3>
-            <img src="/images/corner-sofa.jpg" alt="Corner Sofa" className="w-full mb-2" />
+            {/* <img src="/images/corner-sofa.jpg" alt="Corner Sofa" className="w-full mb-2" /> */}
             <p className="text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
           <div className="bg-gray-200 rounded-lg p-4">
-          <img src="/images/i5.png" alt="catogory-img-1" />
+          {/* <img src="/images/i5.png" alt="catogory-img-1" /> */}
             <h3 className="text-xl font-bold mb-2">Double Seat</h3>
-            <img src="/images/double-seat.jpg" alt="Double Seat" className="w-full mb-2" />
+            {/* <img src="/images/double-seat.jpg" alt="Double Seat" className="w-full mb-2" /> */}
             <p className="text-lg">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
         </div>

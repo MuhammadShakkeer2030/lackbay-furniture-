@@ -12,7 +12,7 @@ const Header: React.FC = () => {
     <header className="bg-gray-800 text-white">
       <nav className="flex items-center justify-between px-4 py-3">
         <div>
-         <img src="../assets/images/2023/01/logo.jpg" alt="" />
+         {/* <img src="/images/2023/01/logo.jpg" alt="" /> */}
         </div>
         <div className="flex items-center">
           <button
