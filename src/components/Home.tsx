@@ -14,15 +14,12 @@ const Home: React.FC = () => {
           <h1 className="text-xl  font-bold mb-4">Free Delivery & Shipping</h1>
           <p className="text-lg mb-8">For all orders over $200.</p>
         </div>
-
-
         <div className="border w-[250px] py-[10px] flex flex-col items-center justify-center " >
           <GiReturnArrow className="text-3xl text-[#006d63]" />
           <h1 className="text-xl  font-bold mb-4">Return Warranty</h1>
           <p className="text-lg mb-8">If you're not satisfied.</p>
         </div>
-
-        <div className="border w-[250px] py-[10px] flex flex-col items-center justify-center " >
+        <div className="border w-[250px] py-[10px] flex flex-col items-center justify-center" >
           <BiSupport className="text-3xl text-[#006d63]" />
           <h1 className="text-xl  font-bold mb-4">24/7 Technical Support</h1>
           <p className="text-lg mb-8">Anytime & anywhere you're.</p>

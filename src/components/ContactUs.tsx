@@ -64,7 +64,7 @@ const ContactUs:React.FC=()=> {
             <textarea
               id="message"
               name="message"
-              rows="4"
+              rows={4}
               className="w-full border-gray-300 rounded-md p-2"
               required
             ></textarea>
