@@ -9,8 +9,8 @@ const FilterImages: React.FC = () => {
     }, [])
 
     return (
-        <div>
-            <span className='flex gap-3'>
+        <div className='mt-5 bg-[#006e63]/10 p-5'>
+            <span className='flex justify-center bg-[#006e63]/80 gap-3 mb-5'>
                 {/* Here is not dublicated catogory printed . and filter images to filtred Array */}
                 {Array.from(new Set(filterHomeImages?.map(({ category }) => category))).slice().reverse().map((category, index) => (
                     <p
@@ -25,7 +25,7 @@ const FilterImages: React.FC = () => {
             <div className='flex flex-wrap gap-2'>
                 {
                     filterdArray?.map(({ image }, index) => <div key={index}>
-                        <img src={image} alt="filter-img" className='w-[100px] md:w-[200px]' />
+                        <img src={image} alt="filter-img" className='w-[180px] md:w-[200px]' />
                     </div>)
                 }
             </div>

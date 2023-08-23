@@ -1,7 +1,12 @@
-export { default as About } from './About';
-export { default as Header } from './Header'
-export { default as Home } from './Home'
-export { default as ContactUs } from './ContactUs'
-export { default as Footer } from './Footer'
-export { default as ProductCard } from './ProductCard'  
-export {default as Gallery} from './Gallery'
+export { default as About } from "./About";
+export { default as Header } from "./Header";
+export { default as Home } from "./Home";
+export { default as Contact } from "./ContactUs";
+export { default as Footer } from "./Footer";
+export { default as ProductCard } from "./ProductCard";
+export { default as Gallery } from "./Gallery";
+export { default as AboutPage } from "../pages/AboutPage";
+export { default as ContactUs } from "../pages/ContactUs";
+export { default as FilterImages } from "./FilterImages";
+export { default as GalleryPage } from "../pages/GalleryPage";
+export { default as ImageSlider } from "../components/ImageSlider";

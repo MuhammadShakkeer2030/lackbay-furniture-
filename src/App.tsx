@@ -1,26 +1,34 @@
-import React from 'react'
-import './App.css'
-import {BrowserRouter ,Routes,Route} from 'react-router-dom'
-import { About, Footer, Header, Home ,Gallery, ContactUs, ProductCard} from './components/paths'
+import React from "react";
+import "./App.css";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import {
+  Footer,
+  Header,
+  Home,
+  ContactUs,
+  ProductCard,
+  AboutPage,
+  GalleryPage,
+} from "./components/paths";
 
-const App:React.FC = () => {
-
+const App: React.FC = () => {
   return (
     <>
       <BrowserRouter>
         <Header />
-           <Routes>
-             <Route path="/" element={<Home/>} />
-             <Route path='/About' element={<About/>} />
-             <Route path='/Gallery.tsx' element={<Gallery/>} />
-             <Route path='/ContactUs' element={<ContactUs/>} />
-             <Route path='/ProductCard' element={<ProductCard/>} />
-           </Routes>
+        <div className=" mx-auto px-6 py-8">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/AboutPage" element={<AboutPage />} />
+            <Route path="/GalleryPage" element={<GalleryPage />} />
+            <Route path="/ContactUs" element={<ContactUs />} />
+            <Route path="/ProductCard" element={<ProductCard />} />
+          </Routes>
+        </div>
         <Footer />
       </BrowserRouter>
-
     </>
-  )
-}
+  );
+};
 
-export default App
+export default App;

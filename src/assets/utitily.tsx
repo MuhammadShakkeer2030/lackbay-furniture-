@@ -1,9 +1,9 @@
 export const menuItems = [
   { title: 'Home', link: '/' },
-  { title: 'About Us', link: '/about' },
-  { title: 'Products', link: '/products' },
-  { title: 'Gallery', link: '/gallery' },
-  { title: 'Contact Us', link: '/contact' },
+  { title: 'About', link: '/AboutPage' },
+  { title: 'Products', link: '/ProductCard' },
+  { title: 'Gallery', link: '/GalleryPage' },
+  { title: 'Contact Us', link: '/ContactUs' },
 ];
 
 export const sofa = [
