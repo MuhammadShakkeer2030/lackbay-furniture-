@@ -59,7 +59,7 @@ const Footer: React.FC = () => {
         </div>
         {/* end map */}
         <div className="mt-8 text-center">
-        <p className='text-sm'>Copyright © 2023 Lacbay Furniture. <span className="text-[#006e63]"> Designed by Empire Technolgies</span> Allrights are reserved. </p>
+        <p className='text-sm'>Copyright © 2023 Lacbay Furniture. <span className="text-[#006e63]"> Designed by Empire Technologies</span> Allrights are reserved. </p>
         </div>
 
         
