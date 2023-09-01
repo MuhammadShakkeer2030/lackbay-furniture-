@@ -5,9 +5,11 @@ import { BiSupport } from "react-icons/bi";
 import { GiReturnArrow } from "react-icons/gi";
 import FilterImages from "./FilterImages";
 import { Link } from "react-router-dom";
+import ImageSlider from "./ImageSlider";
 const Home: React.FC = () => {
   return (
     <div className="container ">
+      <ImageSlider/>
       <div className="text-center flex flex-wrap justify-evenly gap-2">
         <div className="border w-[250px] py-[10px] flex flex-col items-center justify-center ">
           <GrDeliver className="text-3xl text-[#006d63]" />
@@ -32,9 +34,9 @@ const Home: React.FC = () => {
         </div>
       </div>
 
-      <div className="mt-16 flex flex-wrap gap-5 md:gap-10">
+      <div className="mt-16 flex  flex-col md:flex-row flex-wrap gap-5 md:gap-4">
         <img className="w-[500px] object-contain" src="/images/about5-768x803.jpg" alt="Lackbay_about_page" />
-        <div className="md:w-[800px]">
+        <div className="md:w-[600px]">
           <h2 className="text-2xl font-bold mb-4 text-[#006e63] ">ABOUT</h2>
           <p className="text-[14px] mb-8">
             Lacbay is the brand name of Lacbay Ventures LLP. The Lacbay ventures
