@@ -1,6 +1,5 @@
 import React from "react";
 import { BsGift } from "react-icons/bs";
-import { GrDeliver } from "react-icons/gr";
 import { BiSupport } from "react-icons/bi";
 import { GiReturnArrow } from "react-icons/gi";
 import { TbTruckDelivery} from 'react-icons/tb'
