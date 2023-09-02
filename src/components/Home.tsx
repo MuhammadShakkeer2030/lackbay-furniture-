@@ -2,7 +2,7 @@ import React from "react";
 import { BsGift } from "react-icons/bs";
 import { GrDeliver } from "react-icons/gr";
 import { BiSupport } from "react-icons/bi";
-import { GiReturnArrow } from "react-icons/gi";
+import { GiDeliveryDrone, GiReturnArrow, GiStorkDelivery } from "react-icons/gi";
 import FilterImages from "./FilterImages";
 import { Link } from "react-router-dom";
 import ImageSlider from "./ImageSlider";
@@ -12,7 +12,7 @@ const Home: React.FC = () => {
       <ImageSlider/>
       <div className="text-center flex flex-wrap justify-evenly gap-2">
         <div className="border w-[250px] py-[10px] flex flex-col items-center justify-center ">
-          <GrDeliver className="text-3xl text-[#006d63]" />
+          <GiStorkDelivery className="text-3xl text-[#006d63]" />
           <h1 className="text-xl  font-bold mb-4">Free Delivery & Shipping</h1>
           <p className="text-lg mb-8">For all orders over $200.</p>
         </div>
