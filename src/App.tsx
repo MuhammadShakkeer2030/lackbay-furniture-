@@ -16,7 +16,7 @@ const App: React.FC = () => {
     <>
       <BrowserRouter>
         <Header />
-        <div className=" mx-auto px-6 py-8">
+        <div className="w-[80%] mx-auto  py-8">
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/AboutPage" element={<AboutPage />} />
