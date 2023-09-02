@@ -1,4 +1,5 @@
-import React, { useState, useEffect } from "react";
+
+import  { useState, useEffect } from "react";
 import { FaCircle } from "react-icons/fa";
 
 const images = [
@@ -7,6 +8,8 @@ const images = [
   // '/image3.jpg',
   // '/image4.jpg',
 ];
+
+
 
 const ImageSlider = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -32,7 +35,7 @@ const ImageSlider = () => {
         />
       ))}
       <span className="absolute bottom-0 z-30 flex gap-2 ">
-        {images?.map((item, index) => (
+        {images?.map((_item, index) => (
           <FaCircle
             className={
               currentIndex === index ? "text-gray-500" : "text-gray-500/50"

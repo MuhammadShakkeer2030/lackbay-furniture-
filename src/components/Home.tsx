@@ -1,8 +1,7 @@
 import React from "react";
 import { BsGift } from "react-icons/bs";
-import { GrDeliver } from "react-icons/gr";
 import { BiSupport } from "react-icons/bi";
-import { GiDeliveryDrone, GiReturnArrow, GiStorkDelivery } from "react-icons/gi";
+import { GiReturnArrow, GiStorkDelivery } from "react-icons/gi";
 import FilterImages from "./FilterImages";
 import { Link } from "react-router-dom";
 import ImageSlider from "./ImageSlider";
@@ -17,7 +16,7 @@ const Home: React.FC = () => {
           <p className="text-lg mb-8">For all orders over $200.</p>
         </div>
         <div className="border w-[250px] py-[10px] flex flex-col items-center justify-center ">
-          <GiReturnArrow className="text-3xl text-[#006d63]" />
+          <GiReturnArrow className="text-3xl text-[#f08649]" />
           <h1 className="text-xl  font-bold mb-4">Return Warranty</h1>
           <p className="text-lg mb-8">If you're not satisfied.</p>
         </div>
@@ -75,7 +74,7 @@ const Home: React.FC = () => {
           Our Categories
         </h2>
         <div className="flex flex-wrap justify-center flex-col md:flex-row gap-4">
-          <div className="md:w-[360px] bg-gray-200 rounded-lg p-4">
+          <div className="md:w-[200px] bg-gray-200 rounded-lg p-4">
             <img src="/images/single-1.png" alt="catogory-img-1" />
 
             <h3 className="text-xl font-bold mb-2">Single Seat</h3>
@@ -83,16 +82,17 @@ const Home: React.FC = () => {
              item
             </p>
           </div>
-          <div className="md:w-[360px] bg-gray-200 rounded-lg p-4">
+          <div className="md:w-[200px] bg-gray-200 rounded-lg p-4">
             <img src="/images/corner.png" alt="catogory-img-1" />
             <h3 className="text-xl font-bold mb-2">Corner Sofa</h3>
             <p className="text-lg">
              item
             </p>
           </div>
-          <div className="md:w-[360px] bg-gray-200 rounded-lg p-4">
-            <h3 className="text-xl font-bold mb-2">Double Seat</h3>
+          <div className="md:w-[200px] bg-gray-200 rounded-lg p-4">
             <img src="/images/double-seat.png" alt="Double Seat"  />
+            <h3 className="text-xl font-bold mb-2">Double Seat</h3>
+
             <p className="text-lg">
              item
             </p>
