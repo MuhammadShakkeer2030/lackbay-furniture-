@@ -3,7 +3,7 @@ import React from "react";
 const ContactUs: React.FC = () => {
   return (
     <div className="container mx-auto px-4 py-8">
-      <div className="text-center w-[600px] mx-auto">
+      <div className="text-center w-full md:w-[600px] mx-auto">
         <h2 className="text-3xl font-bold mb-4">Contact Us</h2>
         <p className="text-lg mb-8">
           Call Us: (+91) 974 519 9922, (+91) 974 529 9922

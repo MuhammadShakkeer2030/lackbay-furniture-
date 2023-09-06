@@ -44,11 +44,11 @@ const Header: React.FC = () => {
         </div>
       </div>
 
-      <nav className={`flex mt-20 md:pl-[120px] bg-[#006d63]  ${isMenuOpen ? "h-auto" : "h-[60px]"}  items-center justify-between p-5`}>
+      <nav className={`flex mt-5 md:mt-20 md:pl-[120px] bg-[#006d63]  ${isMenuOpen ? "h-auto" : "h-[60px]"}  items-center justify-between p-5`}>
         <div>{/* <img src="/images/2023/01/logo.jpg" alt="" /> */}</div>
         <div className="flex  w-full flex-row-reverse jus-start relative items-center z-20 ">
           <button
-            className="p-2 mr-2 text-gray-400 rounded hover:text-white hover:bg-gray-700 absolute  right-0 -top-[20px] md:relative z-20  focus:outline-none md:hidden"
+            className="p-2 mr-2 text-gray-400 rounded hover:text-white hover:bg-gray-700/20 absolute  right-0 -top-[20px] md:relative z-20  focus:outline-none md:hidden"
             onClick={toggleMenu}
           >
             <svg
