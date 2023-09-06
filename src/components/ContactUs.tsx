@@ -1,9 +1,9 @@
-import React from 'react'
+import React from "react";
 
-const ContactUs:React.FC=()=> {
+const ContactUs: React.FC = () => {
   return (
     <div className="container mx-auto px-4 py-8">
-      <div className="text-center">
+      <div className="text-center w-[600px] mx-auto">
         <h2 className="text-3xl font-bold mb-4">Contact Us</h2>
         <p className="text-lg mb-8">
           Call Us: (+91) 974 519 9922, (+91) 974 529 9922
@@ -15,9 +15,9 @@ const ContactUs:React.FC=()=> {
         </p>
       </div>
 
-      <div className="mt-16">
+      <div className="max-w-md mx-auto mt-16">
         <h2 className="text-2xl font-bold mb-4 text-[#006e63]">Get In Touch</h2>
-        <form className="max-w-md mx-auto">
+        <form className="">
           <div className="mb-4">
             <label htmlFor="name" className="block text-lg font-medium">
               Name<span className="text-red-500">*</span>:
@@ -26,7 +26,7 @@ const ContactUs:React.FC=()=> {
               type="text"
               id="name"
               name="name"
-              className="w-full border-gray-300 rounded-md p-2"
+              className="w-full border border-gray-300 rounded-md p-2"
               required
             />
           </div>
@@ -39,7 +39,7 @@ const ContactUs:React.FC=()=> {
               type="email"
               id="email"
               name="email"
-              className="w-full border-gray-300 rounded-md p-2"
+              className="w-full border border-gray-300 rounded-md p-2"
               required
             />
           </div>
@@ -52,7 +52,7 @@ const ContactUs:React.FC=()=> {
               type="text"
               id="subject"
               name="subject"
-              className="w-full border-gray-300 rounded-md p-2"
+              className="w-full border border-gray-300 rounded-md p-2"
               required
             />
           </div>
@@ -65,21 +65,21 @@ const ContactUs:React.FC=()=> {
               id="message"
               name="message"
               rows={4}
-              className="w-full border-gray-300 rounded-md p-2"
+              className="w-full border border-gray-300 rounded-md p-2"
               required
             ></textarea>
           </div>
 
-          <button
-            type="submit"
+          <a
+            href="mailto:info@lacbayfurniture.com"
             className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded"
           >
             Submit
-          </button>
+          </a>
         </form>
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default ContactUs
+export default ContactUs;

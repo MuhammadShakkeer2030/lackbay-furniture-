@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Nunito+Sans:wght@900&family=Rubik:ital,wght@0,300;1,500&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animate-slide-in {
+  animation: slideInFromTop 1s ease-in-out forwards;
+}
+
+.opacity-0 {
+  opacity: 0;
+}

@@ -6,8 +6,8 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-gray-800 text-white">
       <div className="container mx-auto py-6 px-4">
-        <div className="flex flex-col md:flex-row justify-between">
-          <div className="mb-4 md:mb-0">
+        <div className="flex flex-col text-justify md:py-[20px] md:flex-row justify-between">
+          <div className="mb-4 w-auto md:w-[400px] md:mb-0">
             <h4 className="text-[20px] font-semibold text-[#006e63]">CONTACT INFO</h4>
             <p className="text-sm text-[#888]">LACBAY VENTUERS LLP</p>
             <p className="text-sm text-[#888]">

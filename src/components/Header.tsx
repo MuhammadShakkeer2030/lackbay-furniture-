@@ -11,7 +11,7 @@ const Header: React.FC = () => {
   };
 
   return (
-    <header className="bg-gray-800 text-white">
+    <header className="">
       <div className="content">
         Need help?{" "}
         <a href="#" className="text-blue-500 hover:underline">
