@@ -9,26 +9,26 @@ import {
   ProductCard,
   AboutPage,
   GalleryPage,
+  ProductDetails,
 } from "./components/paths";
 
-const App: React.FC = () => {
-  return (
-    <>
-      <BrowserRouter>
-        <Header />
-        <div className="">
-          <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/AboutPage" element={<AboutPage />} />
-            <Route path="/GalleryPage" element={<GalleryPage />} />
-            <Route path="/ContactUs" element={<ContactUs />} />
-            <Route path="/ProductCard" element={<ProductCard />} />
-          </Routes>
-        </div>
-        <Footer />
-      </BrowserRouter>
-    </>
-  );
-};
+const App: React.FC = () => (
+  <>
+    <BrowserRouter>
+      <Header />
+      <div className="">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/AboutPage" element={<AboutPage />} />
+          <Route path="/GalleryPage" element={<GalleryPage />} />
+          <Route path="/ContactUs" element={<ContactUs />} />
+          <Route path="/ProductCard" element={<ProductCard />} />
+          <Route path="/ProductDetails/:id" element={<ProductDetails index={""} />} />
+        </Routes>
+      </div>
+      <Footer />
+    </BrowserRouter>
+  </>
+);
 
 export default App;

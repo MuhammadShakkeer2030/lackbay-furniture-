@@ -6,7 +6,12 @@ export const menuItems = [
   { title: "Contact Us", link: "/ContactUs" },
 ];
 
-export const sofa = [
+export type filter = {
+  id: number;
+  image: string;
+  category: string;
+};
+export const sofa:filter[] = [
   { id: 2, image: "./images/sofa/2.jpg", category: "single" },
   { id: 3, image: "./images/sofa/3.jpg", category: "single" },
   { id: 4, image: "./images/sofa/4.jpg", category: "corner" },
@@ -28,11 +33,7 @@ export const sofa = [
   { id: 20, image: "./images/sofa/20.jpg", category: "single" },
 ];
 
-export type filter = {
-  id: number;
-  image: string;
-  category: string;
-};
+
 export const filterHomeImages: filter[] = [
   { id: 1, image: "./images/filter2.jpg", category: "double" },
   { id: 2, image: "./images/filter1.jpg", category: "corner" },

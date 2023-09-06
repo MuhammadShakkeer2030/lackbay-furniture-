@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { filter, sofa } from "../assets/utitily";
 import { useState, useEffect } from "react";
 
@@ -40,7 +41,7 @@ function Gallery() {
          */}
 
         {filterdArray?.map(({ image }, index) => (
-          <div key={index}>
+          <Link to={`/ProductDetails/${index}`} key={index}>
             <img
               key={index}
               src={image}
@@ -50,7 +51,7 @@ function Gallery() {
               // onLoad={loadHandling}
             />
             {/* {imgLoading && "Loading..."} */}
-          </div>
+          </Link>
         ))}
       </div>
     </div>

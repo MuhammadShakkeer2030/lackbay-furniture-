@@ -12,7 +12,7 @@ const Header: React.FC = () => {
 
   return (
     <header className="">
-      <div className="content">
+      <div className="text-[14px] md:text-xl w-[100%] pt-5 pl-2 lg:pl-0 lg:w-[80%] md:mx-auto">
         Need help?{" "}
         <a href="#" className="text-blue-500 hover:underline">
           Contact Us.
@@ -20,7 +20,7 @@ const Header: React.FC = () => {
       </div>
       <div className="flex justify-center items-center gap-10">
         <div className="header-logo">
-          <a href="https://lacbayfurniture.com/">
+          <Link to={"/"} >
             <img
               className="header-logo-img"
               src="https://lacbayfurniture.com/wp-content/uploads/2023/01/lacbay-logo.png"
@@ -28,7 +28,7 @@ const Header: React.FC = () => {
               height="100"
               alt="LACBAY FURNITURE"
             />
-          </a>
+          </Link>
         </div>
 
         {/* Search Box */}
@@ -44,11 +44,11 @@ const Header: React.FC = () => {
         </div>
       </div>
 
-      <nav className="flex mt-20 bg-[#006d63] items-center justify-between px-4 py-3">
+      <nav className={`flex mt-20 md:pl-[120px] bg-[#006d63]  ${isMenuOpen ? "h-auto" : "h-[60px]"}  items-center justify-between p-5`}>
         <div>{/* <img src="/images/2023/01/logo.jpg" alt="" /> */}</div>
-        <div className="flex items-center">
+        <div className="flex  w-full flex-row-reverse jus-start relative items-center z-20 ">
           <button
-            className="p-2 mr-2 text-gray-400 rounded hover:text-white hover:bg-gray-700 focus:outline-none md:hidden"
+            className="p-2 mr-2 text-gray-400 rounded hover:text-white hover:bg-gray-700 absolute  right-0 -top-[20px] md:relative z-20  focus:outline-none md:hidden"
             onClick={toggleMenu}
           >
             <svg

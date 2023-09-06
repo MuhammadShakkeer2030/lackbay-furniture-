@@ -11,3 +11,4 @@ export { default as FilterImages } from "./FilterImages";
 export { default as GalleryPage } from "../pages/GalleryPage";
 export { default as ImageSlider } from "../components/ImageSlider";
 export { default as TextAnimation } from "../components/TextAnimaion";
+export { default as ProductDetails } from "../components/ProductDetails";

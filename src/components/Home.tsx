@@ -45,7 +45,7 @@ const Home: React.FC = () => (
       </div>
     </div>
 
-{/* // ABOUT */}
+    {/* // ABOUT */}
     <div className="text-justify w-[100%] px-5 lg:w-[80%] md:mx-auto  mt-16 flex  flex-col md:flex-row  gap-5 md:gap-4">
       <img
         className="w-full md:w-[500px] object-contain"
@@ -70,7 +70,9 @@ const Home: React.FC = () => (
         </p>
 
         <p className="text-[14px] mb-8">
-          <strong className="text-[#006e63]">VISION</strong>
+          <strong className="text-[#006e63] text-[14px] md:text-xl">
+            VISION
+          </strong>
           <br />
           Our vision is to manufacture and supply a range of unique, quality,
           and futuristic furniture that satisfies the needs and meets the
@@ -78,7 +80,9 @@ const Home: React.FC = () => (
         </p>
 
         <p className="text-[14px] mb-8">
-          <strong className="text-[#006e63]">MISSION</strong>
+          <strong className="text-[#006e63] text-[14px] md:text-xl">
+            MISSION
+          </strong>
           <br />
           Customer satisfaction is our major concern, and we always care about
           the value of their spending by making sure that the product meets
@@ -92,18 +96,24 @@ const Home: React.FC = () => (
       <h2 className="text-2xl font-semibold mb-4 ">Our Categories</h2>
       <div className="flex flex-wrap  lg:justify-between md:flex-row gap-4">
         <div className="w-[200px] lg:w-[400px] border rounded-lg p-4">
-          <img src="/images/single-1.png" alt="catogory-img-1" />
-
+          <a href="#Product-sec">
+            {" "}
+            <img src="/images/single-1.png" alt="catogory-img-1" />
+          </a>
           <h3 className="text-xl font-bold mb-2">Single Seat</h3>
           <p className="text-lg">item</p>
         </div>
         <div className="w-[200px] lg:w-[400px] border rounded-lg p-4">
-          <img src="/images/corner.png" alt="catogory-img-1" />
+          <a href="#Product-sec">
+            <img src="/images/corner.png" alt="catogory-img-1" />
+          </a>
           <h3 className="text-xl font-bold mb-2">Corner Sofa</h3>
           <p className="text-lg">item</p>
         </div>
         <div className="w-[200px] lg:w-[400px] border rounded-lg p-4">
-          <img src="/images/double-seat.png" alt="Double Seat" />
+          <a href="#Product-sec">
+            <img src="/images/double-seat.png" alt="Double Seat" />
+          </a>
           <h3 className="text-xl font-bold mb-2">Double Seat</h3>
 
           <p className="text-lg">item</p>

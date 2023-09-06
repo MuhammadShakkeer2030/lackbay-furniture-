@@ -7,7 +7,9 @@
 body {
   font-family: 'Poppins', sans-serif;
 }
-
+.jus-start {
+  justify-content: start;
+}
 @keyframes slideInFromTop {
   0% {
     transform: translateY(-100%);
