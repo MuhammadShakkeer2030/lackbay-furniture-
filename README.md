@@ -1,4 +1,4 @@
-![ Project Image](./assets/project-img.jpg)
+![ Project Image](./project-img.jpg)
 
 
 # Lackbay-Furniture website
