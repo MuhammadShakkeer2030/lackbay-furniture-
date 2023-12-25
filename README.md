@@ -1,4 +1,4 @@
-![ Project Image](./project-img.jpg)
+![ Project Image](public/project-img.jpg)
 
 
 # Lackbay-Furniture website
