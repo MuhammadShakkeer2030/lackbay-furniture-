@@ -2,7 +2,7 @@ Certainly! Here's a README.md template for the provided package.json:
 
 ---
 
-# Vite Project
+# Lackbay-Furniture website
 
 ## Description
 
@@ -82,22 +82,3 @@ vite-project/
 └── ...
 ```
 
-## Contributing
-
-If you want to contribute to this project, please follow the guidelines outlined in [CONTRIBUTING.md](link-to-contributing.md).
-
-## License
-
-This project is licensed under the [License Name] - see the [LICENSE.md](link-to-license.md) file for details.
-
-## Acknowledgements
-
-- Mention any individuals or resources that were particularly helpful or influential to the project.
-
----
-
-Remember to replace placeholder text (like [repository URL], [briefly describe], [License Name], etc.) with actual content relevant to your project. Customize and expand this README further as needed to suit your project's specifics.
-
-Feel free to include sections like "Troubleshooting," "FAQs," or "Additional Notes" based on your project's requirements.
-
-If you require further assistance or have specific details to add, please let me know!
