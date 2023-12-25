@@ -1,3 +1,4 @@
+![Image Description](src/assets/project-img.jpg)
 
 
 # Lackbay-Furniture website
