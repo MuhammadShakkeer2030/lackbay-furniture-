@@ -1,6 +1,4 @@
-Certainly! Here's a README.md template for the provided package.json:
 
----
 
 # Lackbay-Furniture website
 
