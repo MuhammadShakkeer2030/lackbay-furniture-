@@ -1,4 +1,5 @@
-![ Project Image](public/project-img.jpg)
+![project-img](https://github.com/MuhammadShakkeer2030/lackbay-furniture-/assets/121001685/b81dd34b-0865-40e5-b60c-770491f39a03)
+
 
 
 # Lackbay-Furniture website
