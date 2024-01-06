@@ -12,13 +12,13 @@ const Header: React.FC = () => {
 
   return (
     <header className="">
-      <div className="text-[14px] md:text-xl w-[100%] pt-5 pl-2 lg:pl-0 lg:w-[80%] md:mx-auto">
+      <div className="text-[14px] md:text-xl w-[100%] pt-2 xl:pt-5 pl-2 lg:pl-0 lg:w-[80%] md:mx-auto">
         Need help?{" "}
         <a href="#" className="text-blue-500 hover:underline">
           Contact Us.
         </a>
       </div>
-      <div className="flex justify-center items-center gap-10">
+      <div className="flex jus-start pl-5 md:pl-0 md:justify-center items-center gap-10">
         <div className="header-logo">
           <Link to={"/"} >
             <img
@@ -32,7 +32,7 @@ const Header: React.FC = () => {
         </div>
 
         {/* Search Box */}
-        <div className="flex items-center border w-[200px] h-[50px] md:w-[500px] relative">
+        <div className="hidden md:flex items-center border w-[200px] h-[50px] md:w-[500px] relative">
           <input
             type="text"
             placeholder="Search..."
@@ -44,7 +44,7 @@ const Header: React.FC = () => {
         </div>
       </div>
 
-      <nav className={`flex mt-5 md:mt-20 md:pl-[120px] bg-[#006d63]  ${isMenuOpen ? "h-auto" : "h-[60px]"}  items-center justify-between p-5`}>
+      <nav className={`flex mt-5  md:pl-[160px] border border-gray-200  bg-gradient-to-br from-white/90 to-slate-300  ${isMenuOpen ? "h-auto" : "h-[60px]"}  items-center justify-between p-5`}>
         <div>{/* <img src="/images/2023/01/logo.jpg" alt="" /> */}</div>
         <div className="flex  w-full flex-row-reverse jus-start relative items-center z-20 ">
           <button
@@ -84,7 +84,7 @@ const Header: React.FC = () => {
               <li key={link} onClick={() => setIsMenuOpen(false)}>
                 <Link
                   to={link}
-                  className="block px-2 py-1 text-sm font-semibold text-gray-300 hover:text-white"
+                  className="block px-2 py-1 text-sm font-semibold"
                 >
                   {title}
                 </Link>

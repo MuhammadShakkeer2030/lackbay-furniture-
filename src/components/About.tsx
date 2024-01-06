@@ -1,10 +1,13 @@
-import React from "react";
+import { useEffect } from "react";
 
 const About: React.FC = () => {
+  useEffect(() => {
+    window.scroll(0, 0);
+  }, []);
   return (
-    <div className="bg-gray-100 text-justify p-2 md:p-10 lg:p-16">
+    <div className=" text-justify p-2 md:p-10 lg:p-16">
       <div className="max-w-5xl mx-auto">
-        <div className="text-justify">
+        <div className="text-justify gradient__box">
           <h2 className="text-[14px] md:text-xl font-bold mb-4 text-[#006e63]">
             Lacbay
           </h2>
@@ -21,7 +24,8 @@ const About: React.FC = () => {
         </div>
 
         <div className="mt-10 md:mt-16 lg:mt-20 grid grid-cols-1  gap-8">
-          <div>
+
+          <div className="gradient__box">
             <h3 className="text-[14px] md:text-xl font-bold mb-4 text-[#006e63] ">
               Vision
             </h3>
@@ -31,7 +35,8 @@ const About: React.FC = () => {
               meets the expectations of customers.
             </p>
           </div>
-          <div>
+
+          <div className="gradient__box">
             <h3 className="text-[14px] md:text-xl font-bold mb-4 text-[#006e63]">
               Mission
             </h3>
@@ -46,7 +51,7 @@ const About: React.FC = () => {
         </div>
 
         <div className="mt-10 md:mt-16 lg:mt-20 flex flex-wrap flex-col  gap-5">
-          <div>
+          <div className="gradient__box">
             <h3 className="text-[14px] md:text-xl font-bold mb-4 text-[#006e63]">
               Business & Ethics
             </h3>
@@ -67,10 +72,14 @@ const About: React.FC = () => {
               exclusively unique to keep the prestige of our customers.
             </p>
           </div>
-          <img src="/images/busi4.jpg" alt="" className="h-[600px] object-cover" />
+          <img
+            src="/images/busi4.jpg"
+            alt=""
+            className="h-[600px] object-cover"
+          />
         </div>
 
-        <div className="mt-10 md:mt-16 lg:mt-20">
+        <div className="gradient__box mt-10 md:mt-16 lg:mt-20">
           <h3 className="text-[14px] md:text-xl font-bold mb-4 text-[#006e63]">
             Quality Process
           </h3>

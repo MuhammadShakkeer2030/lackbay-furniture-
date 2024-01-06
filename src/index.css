@@ -2,10 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Nunito+Sans:wght@900&family=Rubik:ital,wght@0,300;1,500&display=swap');
+/* @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Nunito+Sans:wght@900&family=Rubik:ital,wght@0,300;1,500&display=swap"); */
 
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 .jus-start {
   justify-content: start;
@@ -25,4 +25,54 @@ body {
 
 .opacity-0 {
   opacity: 0;
+}
+
+/* Text stroke */
+.text-stroke {
+  -webkit-text-stroke-width: 2px; /* Adjust the width as needed */
+  -webkit-text-stroke-color: black; /* Adjust the color as needed */
+}
+
+.text-shadow {
+  text-shadow: rgb(0, 0, 0) 4px 3px 0px;
+}
+
+/* background gradient */
+
+/* GRADIENTS */
+.blue__gradient {
+  background: linear-gradient(180deg, rgba(188, 165, 255, 0) 0%, #214d76 100%);
+  filter: blur(123px);
+}
+
+.gray__gradient {
+  background: linear-gradient(90deg, #878387 0%, #6a5d6a 100%);
+  filter: blur(900px);
+}
+
+.white__gradient {
+  background: rgba(255, 255, 255, 0.6);
+  filter: blur(750px);
+}
+
+.gradient__box {
+  @apply border border-gray-200  bg-gradient-to-br from-white/90 to-slate-300;
+}
+
+/* scrolling animation */
+
+/* Define keyframes for marquee animation */
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Apply animation to the element */
+.marquee-animation {
+  animation: marquee 20s linear infinite;
+  white-space: nowrap; 
 }

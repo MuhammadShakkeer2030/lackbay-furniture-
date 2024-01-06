@@ -10,7 +10,7 @@ const FilterImages: React.FC = () => {
   }, []);
 
   return (
-    <div className="w-[100%] px-5 lg:w-[80%] md:mx-auto  mt-5  md:p-5">
+    <div className="w-[100%] px-5 lg:w-[80%] md:mx-auto  mt-5  md:p-5 border border-gray-200  bg-gradient-to-br from-white/90 to-slate-300">
       <div className="flex items-center justify-between py-2">
         {" "}
         <h3
@@ -39,7 +39,7 @@ const FilterImages: React.FC = () => {
             ))}
         </span>
       </div>
-      <div className="flex flex-wrap justify-around gap-2">
+      <div className="flex flex-wrap justify-center gap-2">
         {filterdArray?.map(
           ({ image }, index) =>
             index < 5 && (
@@ -47,7 +47,7 @@ const FilterImages: React.FC = () => {
                 <img
                   src={image}
                   alt="filter-img"
-                  className="w-[180px] md:w-[300px]"
+                  className="w-[180px] lg:w-[300px] rounded-md"
                 />
               </Link>
             )

@@ -1,9 +1,15 @@
+import { BusinessTiming } from '../components/BusinessTiming'
+import { FAQ } from '../components/FAQ'
+import TestimonialsSection from '../components/Testimonials'
 import { Contact } from '../components/paths'
 
 const ContactUs = () => {
-  return (
+return (
     <div>
-        <Contact/>
+      <Contact />
+      <FAQ />
+      <BusinessTiming />
+      <TestimonialsSection/>
     </div>
   )
 }

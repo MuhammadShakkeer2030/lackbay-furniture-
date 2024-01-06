@@ -1,12 +1,21 @@
-import {FC} from 'react';
+import {  useEffect,FC} from 'react';
 import { useParams } from 'react-router-dom';
+// import { useHistory } from 'react-router-dom';
+
 
 interface DetilsProps {
   index : string
 }
+
+
 const ProductDetails:FC<DetilsProps>=()=> {
   const index = useParams<string>()
-  console.log(index)
+  // const history = useHistory()
+  // console.log(history)
+
+  useEffect(()=>{
+window.scroll(0,0)
+  },[index])
 
   return (
     <div className="bg-white text-black  py-8 px-4 sm:px-8 lg:px-16 xl:px-32">

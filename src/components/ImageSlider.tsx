@@ -4,8 +4,10 @@ import { TextAnimation } from "./paths";
 const images = [
   "https://wowslider.com/sliders/demo-77/data1/images/field175959_1920.jpg",
   "https://wowslider.com/sliders/demo-77/data1/images/idaho239691_1920.jpg",
-  // '/image3.jpg',
-  // '/image4.jpg',
+   "./img/banner/lackbuy-banner1.png",
+  '/img/banner/lackbuy-banner2.png',
+  '/img/banner/lackbuy-banner3.png',
+  '/img/banner/lackbuy-banner4.jpg',
 ];
 
 const ImageSlider = () => {
@@ -28,8 +30,9 @@ const ImageSlider = () => {
             key={index}
             src={image}
             alt={`Image ${index + 1}`}
-            className={` h-[500px] w-full absolute transition-opacity duration-500  object-cover  ${
-              currentIndex === index ? "opacity-100" : "opacity-0"
+            loading="lazy"
+            className={`  absolute xl:h-[500px] w-full inset-0 transition-all transform  delay duration-500 object-contain xl:object-cover  ${
+              currentIndex === index ? "opacity-100 translate-x-0" : "opacity-0  -translate-x-full"
             }`}
           />
         ))}
@@ -43,7 +46,7 @@ const ImageSlider = () => {
             />
           ))}
         </span>
-        <div className="absolute ">
+        <div className="hidden xl:absolute ">
           <TextAnimation currentIndex={currentIndex}/>
         </div>
       </div>

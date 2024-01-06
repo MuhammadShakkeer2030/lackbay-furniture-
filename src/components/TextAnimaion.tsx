@@ -13,16 +13,16 @@ const TextAnimation:FC<AnimationProps> =({currentIndex})=>{
   }, [currentIndex]);
 
   return (
-    <div className="flex items-center justify-center h-[200px] w-[300px] bg-slate-400/50">
+    <div className="flex items-center justify-center h-[200px] w-[300px] bg-slate-700/80">
       <div
         className={`text-center mt-4 ${
           isVisible ? "animate-slide-in" : "opacity-0"
         }`}
       >
         <p className="text-white">
-          <span className="text-yellow-500 text-3xl font-bold">
-            Glasswood Story
-          </span>{" "}
+          <span className="text-yellow-500 text-3xl font-bold text-shadow ">
+           A GLASS <span className="text-white" >WOOD STORY</span>
+          </span>{" "} <br />
           <span className="text-[20px] font-semibold">Lackbuy Furniture</span>
         </p>
       </div>
