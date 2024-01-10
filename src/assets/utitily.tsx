@@ -27,25 +27,24 @@ export type filter = {
   id: number;
   image: string;
   category: string;
-  price:number;
-  description:string;
+  price: number;
+  description: string;
 };
 export const sofa: filter[] = [
-  { id: 2, image: "./img/sofa/2.png", category: "single", price: 499, description: "Stylish and comfortable single sofa." },
-  { id: 3, image: "./img/sofa/3.png", category: "single", price: 599, description: "Premium quality single sofa with modern design." },
-  { id: 4, image: "./img/sofa/4.png", category: "corner", price: 899, description: "Corner sofa with spacious seating." },
-  { id: 5, image: "./img/sofa/5.png", category: "double", price: 799, description: "Luxurious double sofa for relaxation." },
-  { id: 6, image: "./img/sofa/6.png", category: "corner", price: 999, description: "Contemporary corner sofa with adjustable features." },
-  { id: 7, image: "./img/sofa/7.png", category: "corner", price: 1099, description: "Elegant corner sofa for modern living rooms." },
-  { id: 8, image: "./img/sofa/8.png", category: "corner", price: 1199, description: "High-quality corner sofa with multiple seating options." },
-  { id: 9, image: "./img/sofa/9.png", category: "corner", price: 1299, description: "Corner sofa with premium upholstery." },
-  { id: 10, image: "./img/sofa/10.png", category: "single", price: 699, description: "Comfortable and durable single sofa." },
+  { id: 2, image: "./img/sofa/chair1.png", category: "chairs", price: 499, description: "Stylish and comfortable single sofa." },
+  { id: 3, image: "./img/sofa/chair2.png", category: "chairs", price: 599, description: "Premium quality single sofa with modern design." },
+  { id: 4, image: "./img/sofa/chair3.png", category: "chairs", price: 899, description: "Corner sofa with spacious seating." },
+  { id: 5, image: "./img/sofa/sofa1.png", category: "sofa", price: 799, description: "Luxurious double sofa for relaxation." },
+  { id: 6, image: "./img/sofa/sofa2.png", category: "sofa", price: 999, description: "Contemporary corner sofa with adjustable features." },
+  { id: 7, image: "./img/sofa/table1.png", category: "table", price: 1099, description: "Elegant corner sofa for modern living rooms." },
+  { id: 8, image: "./img/sofa/table2.png", category: "table", price: 1199, description: "High-quality corner sofa with multiple seating options." },
+  { id: 9, image: "./img/sofa/table3.png", category: "table", price: 1299, description: "Corner sofa with premium upholstery." },
 ];
 
 interface FilterHomeProps {
-id:number,
-image:string,
-category:string
+  id: number,
+  image: string,
+  category: string
 }
 
 export const filterHomeImages: FilterHomeProps[] = [

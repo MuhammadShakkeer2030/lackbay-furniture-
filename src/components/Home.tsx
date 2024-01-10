@@ -99,13 +99,13 @@ const Home: React.FC = () => {
       {/* // ABOUT */}
       <div className="text-justify w-[100%] px-5 lg:w-[80%] md:mx-auto  mt-16 flex  flex-col md:flex-row  gap-5 md:gap-4">
         <img
-          className="w-full md:w-[500px] object-contain rounded-md"
+          className="w-full md:w-[500px] object-contain xl:object-cover rounded-md"
           src="/img/about/lackbuy-about.png"
           alt="Lackbay_about_page"
         />
-        <div className="w-full md:w-[70%]  border border-gray-200  bg-gradient-to-br from-white/90 to-slate-300 xl:p-4 rounded-md ">
+        <div className="w-full md:w-[70%]  border-2 border-gray-200  bg-gradient-to-br from-white/90 to-slate-300 px-2 xl:px-4 rounded-md ">
           <h2 className="text-2xl font-bold mb-4 text-[#006e63] ">ABOUT</h2>
-          <p className=" text-[14px] mb-8">
+          <p className=" text-[14px] mb-8 xl:text-sm">
             Lacbay is the brand name of Lacbay Ventures LLP. The Lacbay ventures
             are well-established International furniture segment providers in
             Kottakkal. Its world-quality brought it into a position of
@@ -120,17 +120,17 @@ const Home: React.FC = () => {
             efforts to contribute to the promising value for the customer.
           </p>
 
-          <p className="text-[14px] mb-8">
+          <div className="text-[14px] mb-8 xl:text-sm">
             <strong className="text-[#006e63] text-[14px] md:text-xl">
               VISION
             </strong>
-            <br />
+            <p className="" />
             Our vision is to manufacture and supply a range of unique, quality,
             and futuristic furniture that satisfies the needs and meets the
             expectations of customers.
-          </p>
+          </div>
 
-          <p className="text-[14px] mb-8">
+          <p className="text-[14px] mb-8 xl:text-sm">
             <strong className="text-[#006e63] text-[14px] md:text-xl">
               MISSION
             </strong>
@@ -180,14 +180,14 @@ const Home: React.FC = () => {
 
       {/* FILTER IMAGES */}
       <FilterImages />
-      <div className="w-[100%] px-5 lg:w-[80%] md:mx-auto  flex gap-5 flex-col md:flex-row mt-4">
+      {/* <div className="w-[100%] px-5 lg:w-[80%] md:mx-auto  flex gap-5 flex-col md:flex-row mt-4">
         <Link to="/images/banner1.jpg">
           <img src="/images/banner1.jpg" alt="banner" />
         </Link>
         <a href="#">
           <img src="/images/banner2.jpg" alt="banner" />
         </a>
-      </div>
+      </div> */}
 
       <ScrollingText />
     </div>
