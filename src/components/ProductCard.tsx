@@ -32,7 +32,7 @@ function ProductCard() {
       </div>
       <div className="flex flex-wrap justify-center mt-5">
         {filteredArray.map(({ image }, index) => (
-          <Link to={`/ProductDetails/${index}`} key={index}>
+          <Link to={`/productDetails/${index}`} key={index}>
             <img
               src={image}
               alt={`Product ${index + 1}`}

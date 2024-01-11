@@ -41,12 +41,12 @@ const App: React.FC = () => {
                 {/* Page */}
                 {/* <ScrollRestoration /> */}
                 <Route path="/" element={<Home />} />
-                <Route path="/AboutPage" element={<AboutPage />} />
-                <Route path="/GalleryPage" element={<GalleryPage />} />
-                <Route path="/ContactUs" element={<ContactUs />} />
-                <Route path="/ProductCard" element={<ProductCard />} />
+                <Route path="/aboutPage" element={<AboutPage />} />
+                <Route path="/galleryPage" element={<GalleryPage />} />
+                <Route path="/contactUs" element={<ContactUs />} />
+                <Route path="/productCard" element={<ProductCard />} />
                 <Route
-                  path="/ProductDetails/:id"
+                  path="/productDetails/:id"
                   element={<ProductDetails index={""} />}
                 />
               </Routes>

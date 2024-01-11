@@ -1,9 +1,9 @@
 export const menuItems = [
   { title: "Home", link: "/" },
-  { title: "About", link: "/AboutPage" },
-  { title: "Products", link: "/ProductCard" },
-  { title: "Gallery", link: "/GalleryPage" },
-  { title: "Contact Us", link: "/ContactUs" },
+  { title: "About", link: "/aboutPage" },
+  { title: "Products", link: "/productCard" },
+  { title: "Gallery", link: "/galleryPage" },
+  { title: "Contact Us", link: "/contactUs" },
 ];
 
 export const CoutnerData = [
