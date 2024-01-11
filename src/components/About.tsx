@@ -7,7 +7,7 @@ const About: React.FC = () => {
   return (
     <div className=" text-justify p-2 md:p-10 lg:p-16">
       <div className="max-w-5xl mx-auto">
-        <div className="text-justify gradient__box">
+        <div className="text-justify gradient__box px-3">
           <h2 className="text-[14px] md:text-xl font-bold mb-4 text-[#006e63]">
             Lacbay
           </h2>
@@ -23,9 +23,9 @@ const About: React.FC = () => {
           </p>
         </div>
 
-        <div className="mt-10 md:mt-16 lg:mt-20 grid grid-cols-1  gap-8">
+        <div className="mt-10 md:mt-16 lg:mt-20 grid grid-cols-1  gap-8 ">
 
-          <div className="gradient__box">
+          <div className="gradient__box px-3">
             <h3 className="text-[14px] md:text-xl font-bold mb-4 text-[#006e63] ">
               Vision
             </h3>
@@ -36,7 +36,7 @@ const About: React.FC = () => {
             </p>
           </div>
 
-          <div className="gradient__box">
+          <div className="gradient__box px-3">
             <h3 className="text-[14px] md:text-xl font-bold mb-4 text-[#006e63]">
               Mission
             </h3>
@@ -50,8 +50,8 @@ const About: React.FC = () => {
           </div>
         </div>
 
-        <div className="mt-10 md:mt-16 lg:mt-20 flex flex-wrap flex-col  gap-5">
-          <div className="gradient__box">
+        <div className="mt-10 md:mt-16 lg:mt-20 flex flex-wrap flex-col  gap-5 ">
+          <div className="gradient__box px-3">
             <h3 className="text-[14px] md:text-xl font-bold mb-4 text-[#006e63]">
               Business & Ethics
             </h3>
@@ -72,14 +72,14 @@ const About: React.FC = () => {
               exclusively unique to keep the prestige of our customers.
             </p>
           </div>
-          <img
+          {/* <img
             src="/images/busi4.jpg"
             alt=""
             className="h-[600px] object-cover"
-          />
+          /> */}
         </div>
 
-        <div className="gradient__box mt-10 md:mt-16 lg:mt-20">
+        <div className="gradient__box mt-10 md:mt-16 lg:mt-20 px-3">
           <h3 className="text-[14px] md:text-xl font-bold mb-4 text-[#006e63]">
             Quality Process
           </h3>

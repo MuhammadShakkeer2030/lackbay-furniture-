@@ -141,8 +141,10 @@ const Home: React.FC = () => {
           </p>
         </div>
       </div>
+
       {/* OUR CATEGORIES */}
-      <div className="w-[100%] px-5 lg:w-[80%] md:mx-auto md:mt-5">
+
+      {/* <div className="w-[100%] px-5 lg:w-[80%] md:mx-auto md:mt-5">
         <h2 className="text-2xl font-semibold mb-4 ">Our Categories</h2>
         <div className="flex flex-wrap  lg:justify-between md:flex-row gap-4">
           <div className="w-[200px] lg:w-[400px] border rounded-lg p-4">
@@ -169,7 +171,9 @@ const Home: React.FC = () => {
             <p className="text-lg">item</p>
           </div>
         </div>
-      </div>
+      </div> */}
+
+
       {/* COUNTER ANIMATIONS */}
       <div className="flex flex-col xl:flex-row justify-evenly my-5 xl:my-10">
         {CoutnerData?.map((item) =>
