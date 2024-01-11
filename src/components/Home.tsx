@@ -3,7 +3,6 @@ import { BsGift } from "react-icons/bs";
 import { BiSupport } from "react-icons/bi";
 import { GiReturnArrow, GiStorkDelivery } from "react-icons/gi";
 import FilterImages from "./FilterImages";
-import { Link } from "react-router-dom";
 import ImageSlider from "./ImageSlider";
 import RunningCounter from "./RunningCounter";
 import { CoutnerData } from "../assets/utitily";
