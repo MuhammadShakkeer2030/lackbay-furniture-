@@ -173,8 +173,8 @@ const Home: React.FC = () => {
       </div>
       {/* COUNTER ANIMATIONS */}
       <div className="flex flex-col xl:flex-row justify-evenly my-5 xl:my-10">
-        {CoutnerData?.map((item) =>
-          <RunningCounter item={item} />
+        {CoutnerData?.map((item,index) =>
+          <RunningCounter item={item} key={index} />
         )}
       </div>
 
