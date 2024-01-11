@@ -34,7 +34,7 @@ const App: React.FC = () => {
     <>
       <BrowserRouter>
         <div className=" bg-white relative">
-          <Suspense fallback={<div>Loading....</div>} >
+          <Suspense fallback={<div className="text-center mt-10" >Loading....</div>} >
             <Header />
             <div className="">
               <Routes>

@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { sofa } from '../assets/utitily';
 
-const ProductFilterSidebar = () => {
+const FilterSidebar = () => {
   const categories = Array.from(new Set(sofa.map((item) => item.category)));
 
   console.log(categories)
@@ -85,4 +85,4 @@ const ProductFilterSidebar = () => {
   );
 };
 
-export default ProductFilterSidebar;
+export default FilterSidebar;

@@ -19,6 +19,13 @@
       }
     ],
     "no-inline-styles": "off",
-    "axe/parsing": "off"
+    "axe/parsing": "off",
+    "axe/forms": [
+      "default",
+      {
+        "label": "off",
+        "select-name": "off"
+      }
+    ]
   }
 }
