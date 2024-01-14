@@ -1,4 +1,5 @@
-import { useEffect, useRef } from "react";
+/* eslint-disable @typescript-eslint/no-empty-function */
+import React, { useEffect, useRef, useState } from "react";
 import { BsGift } from "react-icons/bs";
 import { BiSupport } from "react-icons/bi";
 import { GiReturnArrow, GiStorkDelivery } from "react-icons/gi";
@@ -12,43 +13,50 @@ import ScrollingText from "./TextScrolling";
 
 const Home: React.FC = () => {
 
+  const [addInterSection,setaddInterSection] = useState(false)
+
   const RefObjects = {
-    deliveryRef: useRef<HTMLDivElement>(null)
+    deliveryRef: useRef<HTMLDivElement>(null),
+    aboutRef: useRef<HTMLDivElement>(null),
+    counterRef: useRef<HTMLDivElement>(null),
+    filterRef: useRef<HTMLDivElement>(null)
   }
 
   useEffect(() => {
     window.scroll(0, 0);
   }, []);
 
-  useEffect(() => {
 
+  const handleIntersection = (entry: IntersectionObserverEntry, ref: React.RefObject<HTMLDivElement>) => {
+    if (entry.isIntersecting) {
+      console.log("isIntersecting", entry, ref)
+      // ref.current?.classList.add("");
+      // ref.current?.classList.add("opacity-100","translate-y-0");
+      setaddInterSection(true)
+
+    }
+  }
+
+  useEffect(() => {
     const options = {
       root: null,
-      rootMargin: "0px",
-      threshold: 0.5
+      rootMargin: '0px',
+      threshold: .5
     }
-
-
 
     const observer = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("opacity-100");
+      entries?.forEach((entry) => {
+        if (entry.target === RefObjects.deliveryRef.current) {
+          handleIntersection(entry, RefObjects.deliveryRef)
         }
-      });
-    }, options);
+      })
+    }, options)
 
     if (RefObjects.deliveryRef.current) {
-      observer.observe(RefObjects.deliveryRef.current);
+      observer.observe(RefObjects.deliveryRef.current)
     }
 
-    return () => {
-      observer.disconnect();
-    };
-  }, [RefObjects.deliveryRef])
-
-
-
+  }, [RefObjects.deliveryRef, RefObjects.aboutRef, RefObjects.counterRef, RefObjects.filterRef])
 
   return (
     <div className=" mt-5 md:mt-0">
@@ -56,7 +64,7 @@ const Home: React.FC = () => {
 
       {/* Delivery : First Intersection point*/}
 
-      <div ref={RefObjects?.deliveryRef} className=" text-center mt-20  md:mt-0 flex flex-wrap justify-between w-[100%] px-5 lg:w-[80%] md:mx-auto  gap-2">
+      <div ref={RefObjects?.deliveryRef} className={` text-center mt-20  md:mt-0 flex flex-wrap justify-between w-[100%] px-5 lg:w-[80%] md:mx-auto  gap-2 opacity-50 transition-all duration-500 transform translate-y-20 ${addInterSection && "opacity-100 translate-y-0"}`}>
 
         <div className="w-[200px] md:w-[350px] bg-[#f9f9f9] py-[5px] flex flex-col items-center justify-center  rounded-md border border-gray-200  bg-gradient-to-br from-white/90 to-slate-300">
           <GiStorkDelivery className="text-2xl text-[#006d63]" />
@@ -97,7 +105,7 @@ const Home: React.FC = () => {
       </div>
 
       {/* // ABOUT */}
-      <div className="text-justify w-[100%] px-5 lg:w-[80%] md:mx-auto  mt-16 flex  flex-col md:flex-row  gap-5 md:gap-4">
+      <div ref={RefObjects?.aboutRef} className="text-justify w-[100%] px-5 lg:w-[80%] md:mx-auto  mt-16 flex  flex-col md:flex-row  gap-5 md:gap-4 opacity-50 transition-all duration-500 transform translateY-effect">
         <img
           className="w-full md:w-[500px] object-contain rounded-md"
           src="/img/about/lackbuy-about.png"
@@ -142,6 +150,7 @@ const Home: React.FC = () => {
           </p>
         </div>
       </div>
+<<<<<<< Updated upstream
       {/* OUR CATEGORIES */}
       <div className="w-[100%] px-5 lg:w-[80%] md:mx-auto md:mt-5">
         <h2 className="text-2xl font-semibold mb-4 ">Our Categories</h2>
@@ -171,14 +180,18 @@ const Home: React.FC = () => {
           </div>
         </div>
       </div>
+=======
+
+>>>>>>> Stashed changes
       {/* COUNTER ANIMATIONS */}
-      <div className="flex flex-col xl:flex-row justify-evenly my-5 xl:my-10">
-        {CoutnerData?.map((item,index) =>
+      <div ref={RefObjects?.counterRef} className="flex flex-col xl:flex-row justify-evenly my-5 xl:my-10 opacity-50 transition-all duration-500 transform translateY-effect">
+        {CoutnerData?.map((item, index) =>
           <RunningCounter item={item} key={index} />
         )}
       </div>
 
       {/* FILTER IMAGES */}
+<<<<<<< Updated upstream
       <FilterImages />
       <div className="w-[100%] px-5 lg:w-[80%] md:mx-auto  flex gap-5 flex-col md:flex-row mt-4">
         <Link to="/images/banner1.jpg">
@@ -187,9 +200,15 @@ const Home: React.FC = () => {
         <a href="#">
           <img src="/images/banner2.jpg" alt="banner" />
         </a>
+=======
+      <div ref={RefObjects?.filterRef}>
+        <FilterImages />
+>>>>>>> Stashed changes
       </div>
 
-      <ScrollingText />
+      <div>
+        <ScrollingText />
+      </div>
     </div>
   );
 };
