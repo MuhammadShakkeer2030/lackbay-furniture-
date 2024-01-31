@@ -13,7 +13,7 @@ import ScrollingText from "./TextScrolling";
 
 const Home: React.FC = () => {
 
-  const [addInterSection,setaddInterSection] = useState(false)
+  const [addInterSection, setaddInterSection] = useState(false)
 
   const RefObjects = {
     deliveryRef: useRef<HTMLDivElement>(null),
@@ -150,7 +150,8 @@ const Home: React.FC = () => {
           </p>
         </div>
       </div>
-<<<<<<< Updated upstream
+      {/* <<<<<<< Updated upstream */}
+      {/* // <<<<<<< Updated upstream */}
       {/* OUR CATEGORIES */}
       <div className="w-[100%] px-5 lg:w-[80%] md:mx-auto md:mt-5">
         <h2 className="text-2xl font-semibold mb-4 ">Our Categories</h2>
@@ -180,9 +181,12 @@ const Home: React.FC = () => {
           </div>
         </div>
       </div>
-=======
+      {/* ======= */}
 
->>>>>>> Stashed changes
+      {/* >>>>>>> Stashed changes */}
+      {/* ======= */}
+
+      {/* >>>>>>> Stashed changes */}
       {/* COUNTER ANIMATIONS */}
       <div ref={RefObjects?.counterRef} className="flex flex-col xl:flex-row justify-evenly my-5 xl:my-10 opacity-50 transition-all duration-500 transform translateY-effect">
         {CoutnerData?.map((item, index) =>
@@ -191,7 +195,8 @@ const Home: React.FC = () => {
       </div>
 
       {/* FILTER IMAGES */}
-<<<<<<< Updated upstream
+      {/* <<<<<<< Updated upstream */}
+      {/* // <<<<<<< Updated upstream */}
       <FilterImages />
       <div className="w-[100%] px-5 lg:w-[80%] md:mx-auto  flex gap-5 flex-col md:flex-row mt-4">
         <Link to="/images/banner1.jpg">
@@ -200,14 +205,20 @@ const Home: React.FC = () => {
         <a href="#">
           <img src="/images/banner2.jpg" alt="banner" />
         </a>
-=======
-      <div ref={RefObjects?.filterRef}>
-        <FilterImages />
->>>>>>> Stashed changes
-      </div>
+        {/* ======= */}
+        <div ref={RefObjects?.filterRef}>
+          <FilterImages />
+          {/* >>>>>>> Stashed changes */}
+          {/* ======= */}
+          <div ref={RefObjects?.filterRef}>
+            <FilterImages />
+            {/* >>>>>>> Stashed changes */}
+          </div>
 
-      <div>
-        <ScrollingText />
+          <div>
+            <ScrollingText />
+          </div>
+        </div>
       </div>
     </div>
   );
