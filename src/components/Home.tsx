@@ -198,13 +198,13 @@ const Home: React.FC = () => {
       {/* <<<<<<< Updated upstream */}
       {/* // <<<<<<< Updated upstream */}
       <FilterImages />
-      <div className="w-[100%] px-5 lg:w-[80%] md:mx-auto  flex gap-5 flex-col md:flex-row mt-4">
-        <Link to="/images/banner1.jpg">
+      <div className="w-[100%] px-5 lg:w-[80%] md:mx-auto  flex gap-5 flex-col  mt-4">
+        {/* <Link to="/images/banner1.jpg">
           <img src="/images/banner1.jpg" alt="banner" />
         </Link>
         <a href="#">
           <img src="/images/banner2.jpg" alt="banner" />
-        </a>
+        </a> */}
         {/* ======= */}
         <div ref={RefObjects?.filterRef}>
           <FilterImages />
